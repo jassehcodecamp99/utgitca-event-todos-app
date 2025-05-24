@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/app.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <h1>Login page</h1>
-</body>
+  <body>
+    <div class="flex justify-center pt-[4rem]">
+      <div class="shadow-2xl px-[3rem] rounded-xl">
+        <h1 class="text-3xl mt-[3rem] text-center font-bold">Login</h1>
+        <form class="mt-[4rem]">
+          <div class="space-y-[1rem]">
+            <div class="leading-[2.5rem]">
+              <label class="font-bold">Email</label><br />
+              <input
+                class="border-1 border-indigo-400 w-[20rem] h-[2.5rem] rounded-md"
+                type="email"
+              /><br />
+            </div>
 
+            <div class="leading-[2.5rem]">
+              <label class="font-bold">password</label><br />
+              <input
+                class="border-1 border-indigo-400 w-[20rem] h-[2.5rem] rounded-md"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-[4rem]">
+            <button
+              class="bg-indigo-500 px-[5.5rem] p-2 rounded-xl text-white font-bold"
+            >
+              log in
+            </button>
+          </div>
+          <div class="text-center mt-[6rem] pb-10">
+            <p>
+              don't have an account?
+              <span class="text-indigo-400">sign up</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
