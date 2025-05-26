@@ -1,36 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/app.css" />
+    <title>Vite + TS</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/src/app.css">
-  <title>Vite + TS</title>
-</head>
+  <body
+    class="font-Josefin bg-[url('/images/background-partern.png')] bg-center bg-cover"
+  >
+    <header class="container p-6 mx-auto">
+      <div class="flex items-center justify-between py-4">
+        <h1 class="uppercase font-bold text-2xl">JCC Todos</h1>
+        <nav>
+          <ul class="flex gap-8 font-bold items-center justify-end">
+            <li>
+              <a href="/" class="underline">Home</a>
+            </li>
+            <li>
+              <a href="/pages/sign-up.html">Sign up</a>
+            </li>
+            <li>
+              <a href="/pages/login.html"> Login </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-<body class="bg-blue-100">
-  <header class="container p-6 bg-white mx-auto">
-    <nav>
-      <ul class="flex gap-8 font-bold items-center justify-end">
-        <li>
-          <a href="/" class="text-blue-500 underline">Home</a>
-        </li>
-        <li>
-          <a href="./pages/sign-up.html">Sign up</a>
-        </li>
-        <li>
-          <a href="./pages/login.html">
-            Login
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div id="app">
-
-  </div>
-  <script type="module" src="/src/main.ts"></script>
-</body>
-
+      <div class="hero-section text-center py-24">
+        <div class="max-w-3xl w-full mx-auto">
+          <h1 class="text-6xl">Increase Your productivity With JCC Todo APP</h1>
+          <p class="text-secondary-color mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+            exercitationem quibusdam maiores consequatur provident distinctio!
+            Placeat.
+          </p>
+          <button
+            class="cursor-pointer bg-primary-color px-10 py-2 rounded-md text-white font-bold mt-4 hover:shadow-md shadow-gray-200"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </header>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

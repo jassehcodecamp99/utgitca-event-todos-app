@@ -36,18 +36,11 @@ body {
   --font-Josefin: "Josefin Sans", sans-serif;
 }
 
-
-.container {
+.custom-container {
   max-width: 800px;
   width: 100%;
   margin-inline: auto;
   padding: 1rem 1.5rem;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2.5rem;
 }
 
 .todo-form .input-group {
@@ -174,4 +167,3 @@ h1 {
   margin-top: 3rem;
   text-align: center;
 }
-

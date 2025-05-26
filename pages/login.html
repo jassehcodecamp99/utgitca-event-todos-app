@@ -4,47 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/app.css" />
-    <title>Document</title>
+    <title>JCC Todo App || Login Page</title>
   </head>
 
-  <body>
-    <div class="flex justify-center pt-[4rem]">
-      <div class="shadow-2xl px-[3rem] rounded-xl">
-        <h1 class="text-3xl mt-[3rem] text-center font-bold">Login</h1>
-        <form class="mt-[4rem]">
-          <div class="space-y-[1rem]">
-            <div class="leading-[2.5rem]">
-              <label class="font-bold">Email</label><br />
+  <body
+    class="font-Josefin bg-[url('/images/background-partern.png')] bg-center bg-cover"
+  >
+    <header class="container p-6 mx-auto">
+      <div class="flex items-center justify-between py-4">
+        <h1 class="uppercase font-bold text-2xl">JCC Todos</h1>
+        <nav>
+          <ul class="flex gap-8 font-bold items-center justify-end">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/pages/sign-up.html">Sign up</a>
+            </li>
+            <li>
+              <a href="/pages/login.html" class="underline"> Login </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="custom-container flex items-center justify-center">
+      <div
+        class="shadow-md shadow-gray-300 rounded-md flex flex-col items-center p-8"
+      >
+        <h1 class="text-lg font-bold mb-6">Login</h1>
+        <form class="flex flex-col items-center gap-y-4">
+          <div class="w-full">
+            <label>
+              <span>Email</span>
               <input
-                class="border-1 border-indigo-400 w-[20rem] h-[2.5rem] rounded-md"
                 type="email"
-              /><br />
-            </div>
-
-            <div class="leading-[2.5rem]">
-              <label class="font-bold">password</label><br />
-              <input
-                class="border-1 border-indigo-400 w-[20rem] h-[2.5rem] rounded-md"
-                type="text"
+                class="outline-1 rounded-md w-full px-4 py-1 mt-2 focus:outline-2 focus:outline-primary-color"
+                placeholder="example@jcc.com"
               />
-            </div>
+            </label>
           </div>
-
-          <div class="flex justify-center mt-[4rem]">
-            <button
-              class="bg-indigo-500 px-[5.5rem] p-2 rounded-xl text-white font-bold"
-            >
-              log in
-            </button>
+          <div class="w-full">
+            <label>
+              <span>Password</span>
+              <input
+                type="password"
+                class="outline-1 rounded-md w-full px-4 py-1 mt-2 focus:outline-2 focus:outline-primary-color"
+                placeholder="enter your password"
+              />
+            </label>
           </div>
-          <div class="text-center mt-[6rem] pb-10">
-            <p>
-              don't have an account?
-              <span class="text-indigo-400">sign up</span>
-            </p>
-          </div>
+          <button
+            class="w-full cursor-pointer bg-primary-color px-10 py-2 rounded-md text-white font-bold mt-4"
+          >
+            log in
+          </button>
+          <p>
+            Don't have an account?
+            <a href="/pages/sign-up.html" class="text-primary-color">sign up</a>
+          </p>
         </form>
       </div>
-    </div>
+    </main>
   </body>
 </html>

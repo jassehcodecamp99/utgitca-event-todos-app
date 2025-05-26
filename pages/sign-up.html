@@ -1,49 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/app.css" />
+    <title>JCC Todo App || Login Page</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/app.css">
-</head>
-
-<body>
-    <main class="bg-white max-w-[450px] mx-auto mt-20 mb-20 rounded-lg shadow-2xl ">
-        <form action="#" class="px-8 py-8 space-y-4 ">
-            <h1 class="mb-6 mt-2 text-center text-[24px] font-bold ">Sign up</h1>
-           <div>
-                <label class="font-bold">
-                    Fullname
-                    <input type="text" class="border-2 px-2 outline-none border-[#dcd9fc] rounded-lg py-2 w-full mt-4" ></input>
-                </label>
-             
-            </div>
-            <div>
-                <label class="font-bold">
-                    Email
-                 <input type="password" class="border-2 px-2 outline-none border-[#dcd9fc] rounded-lg py-2 w-full mt-4" ></input>
-            </div>
-             <div>
-                <label class="font-bold">
-                    Password
-                  
-                    <input type="password" class="border-2 px-2 outline-none border-[#dcd9fc] rounded-lg py-2 w-full mt-4" ></input>
-                </label>
-            </div>
-            <div>
-                <label class="font-bold">
-                    Confirm Password
-                    
-                    <input type="password" class="border-2 px-2 outline-none border-[#dcd9fc] rounded-lg py-2 w-full mt-4" ></input>
-                </label>
-            </div>
-            <div class="px-6 mx-20 py-2 mt-6 font-bold text-[18px] rounded-xl  bg-[#7B6AE7] text-white text-center ">
-                <a href="#" class="">Sign up</a>
-            </div>
-
+  <body
+    class="font-Josefin bg-[url('/images/background-partern.png')] bg-center bg-cover"
+  >
+    <header class="container p-6 mx-auto">
+      <div class="flex items-center justify-between py-4">
+        <h1 class="uppercase font-bold text-2xl">JCC Todos</h1>
+        <nav>
+          <ul class="flex gap-8 font-bold items-center justify-end">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/pages/sign-up.html" class="underline">Sign up</a>
+            </li>
+            <li>
+              <a href="/pages/login.html"> Login </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="custom-container flex items-center justify-center">
+      <div
+        class="shadow-md shadow-gray-300 rounded-md flex flex-col items-center p-8"
+      >
+        <h1 class="text-lg font-bold mb-6">Sign up</h1>
+        <form class="flex flex-col items-center gap-y-4">
+          <div class="w-full">
+            <label>
+              <span>Fullname</span>
+              <input
+                type="text"
+                class="outline-1 rounded-md w-full px-4 py-1 mt-2 focus:outline-2 focus:outline-primary-color"
+                placeholder="enter your full name"
+              />
+            </label>
+          </div>
+          <div class="w-full">
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                class="outline-1 rounded-md w-full px-4 py-1 mt-2 focus:outline-2 focus:outline-primary-color"
+                placeholder="enter your email"
+              />
+            </label>
+          </div>
+          <div class="w-full">
+            <label>
+              <span>Password</span>
+              <input
+                type="password"
+                class="outline-1 rounded-md w-full px-4 py-1 mt-2 focus:outline-2 focus:outline-primary-color"
+                placeholder="enter your password"
+              />
+            </label>
+          </div>
+          <div class="w-full">
+            <label>
+              <span>Confirm Password</span>
+              <input
+                type="password"
+                class="outline-1 rounded-md w-full px-4 py-1 mt-2 focus:outline-2 focus:outline-primary-color"
+                placeholder="confirm your password"
+              />
+            </label>
+          </div>
+          <button
+            class="w-full cursor-pointer bg-primary-color px-10 py-2 rounded-md text-white font-bold font-Josefin mt-4"
+          >
+            Sign up
+          </button>
+          <p>
+            Already have an account?
+            <a href="/pages/login.html" class="text-primary-color">Login</a>
+          </p>
         </form>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
