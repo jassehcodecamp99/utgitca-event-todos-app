@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/app.css" />
-    <link
+    <!-- <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-    />
+    /> -->
 
     <title>JCC Todo App || Login Page</title>
   </head>
@@ -38,15 +38,15 @@
         class="shadow-md bg-white shadow-gray-300 rounded-md flex flex-col items-center p-8"
       >
         <h1 class="text-lg font-bold mb-6">Login</h1>
-        <form class="flex flex-col items-center gap-y-4">
+        <form id="login-form" class="flex flex-col items-center gap-y-4">
           <div class="w-full">
             <label>
               <span>Email</span>
               <input
+                id="email-field"
                 required
                 type="email"
                 class="outline-1 rounded-md w-full px-4 py-1 mt-1 focus:outline-2 focus:outline-primary-color"
-                placeholder="example@jcc.com"
               />
             </label>
           </div>
@@ -54,15 +54,15 @@
             <label>
               <span>Password</span>
               <input
+                id="passsword-field"
                 required
                 type="password"
                 class="outline-1 rounded-md w-full px-4 py-1 mt-1 focus:outline-2 focus:outline-primary-color"
-                placeholder="enter your password"
               />
               <span class="relative">
-                <i
+                <!-- <i
                   class="absolute bx bxs-lock-alt top-0 right-[6px] text-[20px]"
-                ></i>
+                ></i> -->
               </span>
             </label>
           </div>
@@ -78,5 +78,7 @@
         </form>
       </div>
     </main>
+
+    <script src="/src/auth/login.ts"></script>
   </body>
 </html>
